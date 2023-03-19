@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Madurai&family=Lora:ital,wght@0,400;0,500;1,400;1,500;1,700&family=Noto+Sans+Lao:wght@800&family=Roboto:ital@1&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #eee;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(https://images.wallpaperscraft.com/image/single/earth_planet_space_195980_1920x1080.jpg);
+  background-size: cover;
+  padding-top: 100px;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.inputField {
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  width: 200px;
+  height: 30px;
+}
+button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  height: 30px;
+}
+.inputWrapper {
+  margin-top: 30px;
+}
+.textStyle {
+  margin: center;
+  margin-top: 40px;
+}
