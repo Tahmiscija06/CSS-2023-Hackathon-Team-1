@@ -17,7 +17,7 @@ const Weatherpage = () => {
 
     try {
       const response = await fetch(url, {
-        headers: { "X-Api-Key": "bEVoUseoi94xAJOSpBaT4A==HWCrBp6tgHTsLfYK" },
+        headers: { "X-Api-Key": "1ZuhryjYumU44hOnoMFJyTzzwSnOW6juabNy9eyY" },
       });
       if (response.ok) {
         const data = await response.json();
@@ -35,7 +35,7 @@ const Weatherpage = () => {
 
     try {
       const response = await fetch(url, {
-        headers: { "X-Api-Key": "bEVoUseoi94xAJOSpBaT4A==HWCrBp6tgHTsLfYK" },
+        headers: { "X-Api-Key": "1ZuhryjYumU44hOnoMFJyTzzwSnOW6juabNy9eyY" },
       });
       if (response.ok) {
         const data = await response.json();
@@ -54,7 +54,7 @@ const Weatherpage = () => {
     console.log(url);
     try {
       const response = await fetch(url, {
-        headers: { "X-Api-Key": "bEVoUseoi94xAJOSpBaT4A==HWCrBp6tgHTsLfYK" },
+        headers: { "X-Api-Key": "1ZuhryjYumU44hOnoMFJyTzzwSnOW6juabNy9eyY" },
       });
       if (response.ok) {
         const data = await response.json();
@@ -89,7 +89,7 @@ const Weatherpage = () => {
     console.log(url);
     try {
       const response = await fetch(url, {
-        headers: { "X-Api-Key": "bEVoUseoi94xAJOSpBaT4A==HWCrBp6tgHTsLfYK" },
+        headers: { "X-Api-Key": "1ZuhryjYumU44hOnoMFJyTzzwSnOW6juabNy9eyY" },
       });
 
       if (response.ok) {

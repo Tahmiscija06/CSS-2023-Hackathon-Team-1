@@ -16,7 +16,7 @@ const Weather = (props) => {
         <p>Date/Time: {props.dateTime}</p>
       </div>
       <div className={styles.flag}>
-        <img src={props.flag}/>
+        <img src={props.flag} />
       </div>
     </div>
   );
