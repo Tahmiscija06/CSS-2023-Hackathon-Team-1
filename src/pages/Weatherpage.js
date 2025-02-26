@@ -13,12 +13,10 @@ const Weatherpage = () => {
   const [dateTimeData, setDateTimeData] = useState();
 
   const fetchWeatherData = async () => {
-    const url = `https://api.api-ninjas.com/v1/weather?city=${city}`;
+    const url = `http://api.weatherapi.com/v1/current.json?key=4857ae7f8e304013b6f82636252602&q=${city}`;
 
     try {
-      const response = await fetch(url, {
-        headers: { "X-Api-Key": "1ZuhryjYumU44hOnoMFJyTzzwSnOW6juabNy9eyY" },
-      });
+      const response = await fetch(url, {});
       if (response.ok) {
         const data = await response.json();
         setWeatherData(data);
@@ -85,12 +83,10 @@ const Weatherpage = () => {
     }
   };
   const fetchDateTimeData = async () => {
-    const url = `https://api.api-ninjas.com/v1/worldtime?city=${city}`;
+    const url = `http://api.weatherapi.com/v1/current.json?key=4857ae7f8e304013b6f82636252602&q=${city}`;
     console.log(url);
     try {
-      const response = await fetch(url, {
-        headers: { "X-Api-Key": "1ZuhryjYumU44hOnoMFJyTzzwSnOW6juabNy9eyY" },
-      });
+      const response = await fetch(url, {});
 
       if (response.ok) {
         const data = await response.json();
@@ -130,13 +126,13 @@ const Weatherpage = () => {
       dateTimeData ? (
         <Weather
           name={cityData[0].name}
-          temp={weatherData.temp}
-          humidity={weatherData.humidity}
+          temp={weatherData.current.temp_c}
+          humidity={weatherData.current.humidity}
           population={cityData[0].population}
           country={countryData[0].name}
           flag={restCountryData[0].flags.png}
           capital={restCountryData[0].capital}
-          dateTime={dateTimeData.datetime}
+          dateTime={weatherData.current.last_updated}
         />
       ) : (
         <Audio
